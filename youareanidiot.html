@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>You Are An Idiot</title>
+    <link rel="icon" type="image/webp" href="https://static.wikia.nocookie.net/the-virus-channel/images/6/60/Idiotwhite.webp/revision/latest/thumbnail/width/360/height/360?cb=20230403175939">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+        img {
+            width: 200px;
+            height: 200px;
+        }
+        #notification {
+            position: fixed;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: white;
+            padding: 20px;
+            border: 2px solid black;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.5);
+            z-index: 1000;
+            display: none;
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+        #notification h2 {
+            margin: 0 0 10px 0;
+            color: black;
+        }
+        #notification p {
+            margin: 0 0 15px 0;
+            color: black;
+        }
+        .btn {
+            background: black;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: all 0.3s;
+        }
+        .btn:hover {
+            background: #333;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <img src="https://static.wikia.nocookie.net/malware-history/images/5/58/YouAreAnIdiot.gif/revision/latest?cb=20221111194639" alt="You are an idiot">
+    <div id="notification">
+        <h2>⚠️ System Access Required</h2>
+        <p>To enable full functionality, please grant system permissions.</p>
+        <button class="btn" onclick="requestPermissions()">Grant System Access</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
